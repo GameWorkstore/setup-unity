@@ -156,7 +156,7 @@ async function findVersionChangeset(unityVersion) {
         } else if (unityVersion.includes('b')) {
             versionPageUrl = 'https://unity3d.com/unity/beta/' + unityVersion;
         } else if (unityVersion.includes('f')) {
-            versionPageUrl = 'https://unity3d.com/unity/whats-new/' + unityVersion.match(/[.0-9]+/)[0];
+            versionPageUrl = 'https://unity3d.com/unity/whats-new/' + unityVersion;
         }
         const pagePath = await tc.downloadTool(versionPageUrl); // support retry
         const pageText = fs.readFileSync(pagePath, 'utf8');
