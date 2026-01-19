@@ -1,4 +1,4 @@
-name: Setup Unity
+name: GameWorkstore Setup Unity
 description: Download and install Unity on Ubuntu, macOS or Windows. Based on Unity Hub
 inputs:
   unity-version:
